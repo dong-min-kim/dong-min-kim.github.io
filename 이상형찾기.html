@@ -1,0 +1,88 @@
+<html><head><title>연습
+</title></meta charset="utr-8">
+<body>
+  <h1>이상형 찾기
+    <li> 마음에 들지 않으면 눌러주세요(당신의 인생에서 다신 볼 수 없습니다.)</li>
+<style>
+#gallery {
+width:340px;
+border: 2px solid blue;
+border-radius: 10px;
+}
+#gallery figure{
+  margin:10px 20px;
+  color:red;
+  background-color:yellow;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js">
+</script>
+
+<script>
+$(document).ready(function(){
+$("#cat").click(function(){
+  $("#cat").hide("fast");
+  $("#cat").css("background-color","yellow");
+});
+});
+$(document).ready(function(){
+$("#cat2").click(function(){
+  $("#cat2").hide("fast");
+  $("#cat2").css("background-color","yellow");
+});
+});
+$(document).ready(function(){
+$("#rabbit").click(function(){
+  $("#rabbit").hide("fast");
+  $("#rabbit").css("background-color","yellow");
+});
+});
+$(document).ready(function(){
+$("#jogak").click(function(){
+  $("#jogak").hide("fast");
+  $("#jogak").css("background-color","yellow");
+});
+});
+// $('#이름').제이쿼리함수(함수선언(){$(".스타일명").함수();
+</script></head>
+<body>
+<div id="gallery">
+  <figure>
+    <img src="cat2.png" id="cat2" width=300 height=300>
+    <figcaption><b>강아지상</b>
+    </figcaption>
+    </figure>
+  </div>
+</body>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <div id="gallery">
+    <figure>
+      <img src="cat.png" id="cat" width="300" height="300">
+      <figcaption><b>고양이상</b>
+
+        <!-- figcaption은 그림 밑에 글자 넣기 -->
+      </figure>
+</div>
+<div id="gallery">
+  <figure>
+    <img src="rabbit.png" id="rabbit" width="300" height="300">
+    <figcaption><b>토끼상</b>
+
+      <!-- figcaption은 그림 밑에 글자 넣기 -->
+    </figure>
+</div>
+<div id="gallery">
+  <figure>
+    <img src="조각상.png" id="jogak" width="300" height="300">
+    <figcaption><b>조각상</b>
+
+      <!-- figcaption은 그림 밑에 글자 넣기 -->
+    </figure>
+    <p> 아무도 사라지지 않았거나 모두 사라졌다면...<br>
+    당신은 혹시 모솔? </p>
+
+</div>
+</body></html>

@@ -1,0 +1,41 @@
+<html><head><title>연습
+</title></meta charset="utr-8">
+<script src="http://code.jquery.com/jquery-3.3.1.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $('#hide').click(function(){
+    $('.special').hide();
+  });
+  $('#show').click(function(){
+    $('.special').show();
+  });
+  $('#toggle').click(function(){
+    $('.special').toggle();
+  });
+});
+</script>
+</head>
+
+<style>
+.special{
+width:150px;
+height: 150px;
+border:2px solid #0f0;
+float:left;
+}
+</style>
+
+<body>
+  <form>
+    <input type="button" id="hide" value="그림숨기기">
+    <input type="button" id="show" value="그림보기">
+    <input type="button" id="toggle" value="그림토글">
+  </form>
+
+  <div class="special" id="sun">
+    <img src="dog.png" width =100 height =100>
+  </div>
+</body>
+</html>

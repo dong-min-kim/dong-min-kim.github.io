@@ -1,0 +1,38 @@
+<html><head><title></title><meta charset="utr-8">
+</head>
+
+<style>
+  input{
+  background: yellow;
+  width: 150px;
+  height: 30px;
+  border: 1px solid red;
+  }
+  img {
+  border:2px solid black;
+  }
+</style>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("img").animate({width: "600px" }, 1000);
+    $("img").animate({height: "398px" }, 1000);
+    $("img").animate({borderRadius: "50px" }, 1000);
+  });
+});
+</script>
+
+<body>
+  <img src="멍멍이.png" width="300" height="200"
+  <br><b> 반풀이에요</b><br>
+  <input id="btn"  value="확대하기"> <br>
+</body>
+</html>
+
+//$(선택자).animate(객체) <br>
+//$(선택자).animate(객체,속도) <br>
+//$(선택자).animate(객체,속도, easing) <br>
+//$(선택자).animate(객체, 속도, easing, 함수)
